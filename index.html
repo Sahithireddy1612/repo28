@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaqueries</title>
+    <style>
+        /* .div1{
+
+            height: 100px;
+            width: 100px;
+            background-color: antiquewhite;
+            border: 2px solid black;
+            padding: 20px;
+        }
+        img{
+            height: 50%;
+            width: 50%;
+        } */
+        .div1{
+            
+            width: 400px;
+            height: 400px;
+            border: 20px;
+            border-color: solid black;
+           
+        }
+/* 
+        @media screen and (min-width: 300px){
+     .p{
+         color:red;
+    
+          } */
+        
+          @media screen and (min-width: 200px) and (max-width: 250px){
+            .div1{
+          background-color: yellow;
+          }
+        }
+        @media screen and (min-width: 250px) and (max-width: 300px){
+            .div1{
+          background-color: orange;
+          }
+        }
+        @media screen and (min-width: 300px) and (max-width: 350px){
+          .div1{
+          background-color: aqua;
+            }
+        }
+        @media screen and (min-width: 350px) and (max-width: 400px){
+          .div1{
+          background-color: purple;
+          }
+        }
+        @media screen and (min-width: 400px) and (max-width: 450px){
+          .div1{
+          background-color: fuchsia;
+          }
+        }
+        @media screen and (min-width: 450px) and (max-width: 500px){
+          .div1{
+          background-color: wheat;
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <h1>STUDENTS INFORMATION FORM</h1>
+        <table style="text-align: center;">
+            <!-- <style>
+                table,th,td{
+                border:1px solid black;
+    
+            }
+            </style> -->
+            <tr>
+                <td><label for="fname">Firstname:</label></td>
+                        <td><input type="text" id="fname" name="fname" required></td>
+                        <td></td>
+            </tr>
+            <tr>
+                <td><label for="sname">Lastname:</label></td>
+                <td> <input type="text" id="sname" name="sname" required></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="fathername">Fathername:</label></td>
+                <td><input type="text" id="fathername" name="fathername" required></td>
+                <td></td>
+                
+            </tr>
+            <tr>
+                <td><label for="mothername">Mothername :</label></td>
+                        <td><input type="text" id="mothername" name="mothername" required></td>
+                        <td></td>
+            </tr>
+            <tr>
+                <td><label for="num">Id number :</label></td>
+                        <td><input type="number" id="num" name="num" required></td>
+                        <td></td>
+            </tr>
+            <tr>
+                <td><label for="ph">Mobile number:</label></td>
+                        <td><input type="tel" id="ph" name="phone" required pattern="[0-9]{10}"></td>
+                        <td></td>
+            </tr>
+            <tr>
+                <td><label for="mail">email Id :</label></td>
+                        <td><input type="mail" id="mail" name="mail" required pattern="[a-z]{10}"></td>
+                        <td></td>
+            <tr>
+                <td><label for="address">Address :</label></td>
+                <td><input type="text" id="address" name="address" required></td>
+
+            
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Select your gender:</label></td>
+            </tr>
+            <tr>
+                <td><input type="radio" id="gender" name="gender" required>Male</td>
+                        <td><input type="radio" id="gender" name="gender" required>Female</td>
+                        <td><input type="radio" id="gender" name="gender" required>Others</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="education">College name        :</label></td>
+                    <td><input type="text" id="education" name="education" required></td></tr>
+                    <tr>
+                    <td><label for="education">Stream              :</label></td>
+                        <td><input type="text" id="education" name="education" required></td></tr>
+                        <tr>
+                        <td><label for="education">Aggregate percentage:</label></td>
+                            <td><input type="text" id="education" name="education" required></td>
+            </tr>
+            <tr>
+            <td><input type="submit" value="signup" /></td>
+            </tr>
+          
+        </table>
+    </div>
+  
+   
+</body>
+</html>
